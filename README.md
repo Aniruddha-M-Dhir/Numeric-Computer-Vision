@@ -7,7 +7,7 @@ The program takes **15 binary digits (0s and 1s)** as input, arranges them into 
 ---
 
 ## 📂 Project Structure
-binary_grid.py # Python script
+Computer Vision Code
 README.md
 
 ---
