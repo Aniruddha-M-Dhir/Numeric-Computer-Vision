@@ -1,0 +1,21 @@
+# Aniruddha M Dhir
+
+import matplotlib.pyplot as plt
+
+# Input 15 binary digits as a string
+arrInput = input("Enter 15 binary digits (0&1s only): ")
+
+# Convert to list of integers
+bitArray = [int(ch) for ch in arrInput]
+
+# Arrange input into 5x3 grid
+grid = [bitArray[i:i+3] for i in range(0, 15, 3)]
+
+# Print grid as text
+for row in grid:
+    print("".join(str(x) for x in row))
+
+# Show black/white image
+plt.imshow(grid, cmap="grey", vmin=0, vmax=1)
+#plt.axis("off")
+plt.show()
